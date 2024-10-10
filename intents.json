@@ -1,0 +1,104 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hi there!",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey, what would you like to order today? You can choose from the following menu items: pizza, lassi, burger, fries, sandwich, iced tea, biryani, raita, rava dosa, chole bhature, samosa.",
+        "Hello,What can I get for you? You can choose from the following menu items: pizza, lassi, burger, fries, sandwich, iced tea, biryani, raita, rava dosa, chole bhature, samosa.",
+        "Hi there, What would you like to have today? You can choose from the following menu items: pizza, lassi, burger, fries, sandwich, iced tea, biryani, raita, rava dosa, chole bhature, samosa.",
+        "Hi there, What can I bring you today? You can choose from the following menu items: pizza, lassi, burger, fries, sandwich, iced tea, biryani, raita, rava dosa, chole bhature, samosa."
+      ]
+    },
+    {
+      "tag": "start order",
+      "patterns": [
+        "I want 1 pizza and 2 lassi",
+        "I want 1 burger and 2 fries.",
+        "Can I get one sandwich and two iced teas?",
+        "I'd like to order 3 biryani and two raitas",
+        "Can you get me four rava dosas?",
+        "I need 10 samosas. Please hurry up.",
+        "I want 1 chole bhature and 3 lassis."
+      ],
+      "context": "ongoing-order",
+      "responses": [
+        "Sure, Is there anything else?",
+        "Do you need anything more?",
+        "Is there something else you'd like?",
+        "Anything more?",
+        "Is there anything further you’d like?"
+      ]
+    },
+    {
+      "tag": "add order",
+      "patterns": [
+        "I also want 3 samosas",
+        " I’d like one biryani as well.",
+        "Can I have seven lassis too?",
+        "I’ll take two sandwich in addition",
+        "Add five burger to my order, please",
+        "I’d also like to order 3 chole bhature."
+      ],
+      "context": "ongoing-order",
+      "responses": [
+        "Sure, Is there anything else?",
+        "Do you need anything more?",
+        "Is there something else you'd like?",
+        "Anything more?",
+        "Is there anything further you’d like?"
+      ]
+    },
+    {
+      "tag": "remove order",
+      "patterns": [
+        "You can remove 2 samosa from the order",
+        "Please take one lassis off the order.",
+        "Can you remove 2 sandwich from the order?",
+        "I'd like to cancel 6 burger from my order.",
+        "Go ahead and subtract nine samosas from the order.",
+        "You can take 2 biryani out of the order."
+      ],
+      "context": "ongoing-order",
+      "responses": [
+        "Sure, Is there anything else?",
+        "Do you need anything more?",
+        "Is there something else you'd like?",
+        "Anything more?",
+        "Is there anything further you’d like?"
+      ]
+    },
+    {
+      "tag": "order complete",
+      "patterns": [
+        "No thats all, thanks",
+        "No, nothing else.",
+        "No, that's all for now.",
+        "No thanks, that's all I needed.",
+        "Nope, that's everything.",
+        "No, that covers it",
+        "Nothing"
+      ],
+      "context": "ongoing-order",
+      "responses": [
+        "Your total is ",
+        "Your bill is ",
+        "Your total comes ",
+        "That'll be "
+      ]
+    },
+    {
+      "tag": "default",
+      "responses": [
+        "I didn't understand. You can choose from the following menu items: pizza, lassi, burger, fries, sandwich, iced tea, biryani, raita, rava dosa, chole bhature, samosa. "
+      ]
+    }
+
+  ]
+}
